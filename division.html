@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <link rel="stylesheet" href="./division.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Quattrocento:wght@400;700&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <title>Order of Battle Designer</title>
+</head>
+
+<body>
+    <h1 id="pupper" class="super">Order of Battle Designer: Create Your Division</h1>
+    <form action="submission.html" method="POST">
+        <section class='unitQuestions'>
+            <label for='unitName'>Name of Unit:</label>
+            <input id='unitName' name='unitName' type="text" required>
+            <br>
+            <section class="unitSizeClass">
+                <label for="size" >What size unit do you want to create?</label>
+                <select id='size' name='size'>
+                    <option value='division'>Division</option>
+                    <option value="brigade">Brigade</option>
+                    <option value="regiment">Regiment</option>
+                    <option value="battalion">Battalion</option>
+                </select>
+            </section>
+            <label for='faction'>Faction:</label>
+            <select id='faction' name='faction'>
+                <option value="pickOne">Pick One</option>
+                <option value="axis">Axis</option>
+                <option value="allies">Allies</option>
+            </select>
+            <section class='bestNationalitySection'>
+                <span>Only view the most interesting countries?</span>    
+                <br>
+                <input type="radio" name='bestNationalitySelector' id='bestNationalityYes' value='bestNationalityYes'>
+                <label for="bestNationalityYes">Yes</label>
+                <input type="radio" name='bestNationalitySelector' id='bestNationalityNo' value='bestNationalityNo' checked='checked'>
+                <label for="bestNationalityNo">No</label>
+            </section>
+            <section id='axisNationalityClass'>
+               <h4>Axis Nationalities</h4>
+               <hr>
+               <input id='germanyNationality' value='germanyNationality' type="radio" name='axisNationalities'>
+               <label for="germanyNationality">Germany</label>
+               <input id='italyNationality' value='italyNationality' type="radio" name='axisNationalities'>
+               <label for="italyNationality">Italy</label>
+               <input id='japanNationality' value='japanNationality' type="radio" name='axisNationalities'>
+               <label for="japanNationality">Japan</label>
+               <input id='hungaryNationality' value='hungaryNationality' class='worstNationalities' type="radio" name='axisNationalities'>
+               <label for="hungaryNationality" class='worstNationalities'>Hungary</label>
+               <input id='romaniaNationality' value='romaniaNationality' class='worstNationalities' type="radio" name='axisNationalities'>
+               <label for="romaniaNationality" class='worstNationalities'>Romania</label>
+               <input id='finlandNationality' value='finlandNationality' class='worstNationalities' type="radio" name='axisNationalities'>
+               <label for="finlandNationality" class='worstNationalities'>Finland</label>
+               <input id='slovakiaNationality' value='slovakiaNationality' class='worstNationalities' type="radio" name='axisNationalities'>
+               <label for="slovakiaNationality" class='worstNationalities'>Slovakia</label>
+            </section>
+            <section id='alliesNationalityClass'>
+               <h4>Allied Nationalities</h4>
+               <hr>
+               <input id='sovietUnionNationality' value='sovietUnionNationality' type="radio" name='alliesNationalities'>
+               <label for="sovietUnionNationality">Soviet Union</label>
+               <input id='unitedStatesNationality' value='unitedStatesNationality' type="radio" name='alliesNationalities'>
+               <label for="unitedStatesNationality">United States</label>
+               <input id='unitedKingdomNationality' value='unitedKingdomNationality' type="radio" name='alliesNationalities'>
+               <label for="unitedKingdomNationality">United Kingdom</label>
+               <input id='franceNationality' value='franceNationality' type="radio" name='alliesNationalities'>
+               <label for="franceNationality">France</label>
+               <input id='polandNationality' value='polandNationality' type="radio" name='alliesNationalities' class='worstNationalities'>
+               <label for="polandNationality" class='worstNationalities'>Poland</label>
+               <input id='chinaNationality' value='chinaNationality' type="radio" name='alliesNationalities' class='worstNationalities'>
+               <label for="chinaNationality" class='worstNationalities'>China</label>
+               <input id='canadaNationality' value='canadaNationality' type="radio" name='alliesNationalities' class='worstNationalities'>
+               <label for="canadaNationality" class='worstNationalities'>Canada</label>
+               <input id='australiaNationality' value='australiaNationality' type="radio" name='alliesNationalities' class='worstNationalities'>
+               <label for="australiaNationality" class='worstNationalities'>Australia</label>
+               <input id='newZealandNationality' value='newZealandNationality' type="radio" name='alliesNationalities' class='worstNationalities'>
+               <label for="newZealandNationality" class='worstNationalities'>New Zealand</label>
+            </section>       
+        </section>
+        <hr>
+        <section class="unitTypeClass">
+            <label for="unitType">Unit Type</label>
+            <select name="unitType" id="unitType">
+                <option value="infantry">Infantry</option>
+                <option value="armored">Armored</option>
+                <option value="cavalry">Cavalry</option>
+                <option value="artillery">Artillery</option>
+                <option value="antiAircraft">Antiaircraft</option>
+            </select>
+            <section class='unitSubType'>
+                <label for="unitSubInfantry">Specific Type:</label>
+                <select name="unitSubInfantry" id="unitSubInfantry">
+                    <option value=""></option>
+                </select>
+            </section>
+        </section>
+
+    </form>
+    
+
+
+
+    <script src="division.js"></script>
+</body>
+
+</html>   
